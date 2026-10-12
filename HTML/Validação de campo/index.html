@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de E-mail</title>
+
+    <!-- Código CSS -->
+    <style type="text/css">
+      body {
+        background-color: white;
+      }
+
+      h1 {
+        color: #69acad;
+        text-align: center;
+        text-shadow: /* Faz uma outline pro texto */
+          -1px 0px 0 #406b6b,
+          1px 0px 0 #406b6b,
+          0px -1px 0 #406b6b,
+          0px 1px 0 #406b6b,
+          -1px -1px 0 #406b6b,
+          1px -1px 0 #406b6b,
+          -1px 1px 0 #406b6b,
+          1px 1px 0 #406b6b;
+        font-family: Arial;
+      }
+
+      form {
+        margin: auto;
+        width: 40%;
+        padding: 50px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0.2);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-family: Arial;
+      }
+
+      input[type="email"] {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      }
+
+      .btn-enviar {
+        background-color: #77b2b3;
+        padding: 2px 5px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulário de E-mail</h1>
+
+    <!-- Formulário -->
+    <form onsubmit="return validarEmail()">
+      <label for="email">Insira o seu email:</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@dominio.com"/>
+      <button type="submit" class="btn-enviar">
+        Enviar
+      </button>
+    </form>
+
+    <!-- Código Javascript -->
+    <script>
+      function validarEmail() {
+        const email = document.getElementById("email").value;
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!regex.test(email)) {
+          alert("Erro: Insira um endereço de email invalido");
+          return false;
+        }
+        else {
+          alert("E-mail adicionado com sucesso: " + email);
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>

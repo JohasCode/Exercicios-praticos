@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9900daff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#lista-transacoes {
+    list-style: none;
+    padding: 0;
+}
+
+.transacao {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transacao-info {
+    flex-grow: 1;
+}
+
+.transacao-valor {
+    font-weight: bold;
+    color: #28a745; /* Cor verde para valores positivos */
+}
+.transacao-valor.negativo {
+    color: #dc3545; /* Cor vermelha para valores negativos */
+}
+
+.transacao.destaque {
+    border-left: 5px solid #ffc107;
+}
+
+/* Media Query para telas maiores que 768px (tablets e desktops) */
+@media (min-width: 768px) {
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .transacao {
+        padding: 20px;
+    }
+}
