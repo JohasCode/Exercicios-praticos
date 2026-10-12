@@ -6,7 +6,7 @@ O objetivo era construir uma função simples para **validação de campo de e-m
 Ele faz a validação do e-mail digitado pelo usuário, simulando o envio de um formulário.
 
 ### Como é feita essa validação?
-É utilizado **Regex** (ou expressões regulares), são padrões de pesquisa para encontrar, validar ou manipular texto. Elas são usadas para buscar e modificar ocorrências de um padrão em uma string de texto, com aplicações como validação de formulários, análise de logs e manipulação de dados.
+É utilizado [**Regex**](https://www.google.com/search?q=regex+o+que+%C3%A9) (Regular Expression), que é uma sequência de caracteres que forma um padrão de busca para encontrar, validar ou modificar textos.
 
 ## Aprendizados e desafios
 Achei a plataforma Playcode bastante prática e eficiente, possuindo recursos muito úteis para o
