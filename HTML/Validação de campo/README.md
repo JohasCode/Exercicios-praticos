@@ -2,6 +2,12 @@
 ## Sobre o projeto
 O objetivo era construir uma função simples para **validação de campo de e-mail** de um determinado formulário feito em HTML utilizando a plataforma [Playcode](https://playcode.io/).
 
+## Funcionalidade
+Ele faz a validação do e-mail digitado pelo usuário, simulando o envio de um formulário.
+
+### Como é feita essa validação?
+É utilizado **Regex** (ou expressões regulares), são padrões de pesquisa para encontrar, validar ou manipular texto. Elas são usadas para buscar e modificar ocorrências de um padrão em uma string de texto, com aplicações como validação de formulários, análise de logs e manipulação de dados.
+
 ## Aprendizados e desafios
 Achei a plataforma Playcode bastante prática e eficiente, possuindo recursos muito úteis para o
 desenvolvimento web como a pré-visualização da página web em tempo real. Porém, ela é
