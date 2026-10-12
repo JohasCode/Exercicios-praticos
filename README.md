@@ -1,2 +1,2 @@
 # Exercicios-praticos
-Repositório criado para armazenar pequenos exercícios práticos desenvolvidos durante meus estudos de diversas linguagens.
+Repositório criado para armazenar pequenos scripts e exercícios práticos desenvolvidos durante meus estudos de diversas linguagens.
